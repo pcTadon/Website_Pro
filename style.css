@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 30px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 15px; /* Ajuste la distance depuis le haut */
+    left: 40px; /* Ajuste la distance depuis la gauche */
+    z-index: 10; /* Assure que l'image reste au premier plan */
+}
+.flags {
+    display: flex;
+    justify-content: right;
+    margin-top: 1rem;
+    position: absolute;
+    top: 50px; /* Ajuste la distance depuis le haut */
+    right: 50px; /* Ajuste la distance depuis la gauche */
+    z-index: 10; /* Assure que l'image reste au premier plan */
+}
+.flags img {
+    margin: 0 1rem;
+    width: 50px;
+    height: auto;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background: #0056b3;
+}
+.chart-container {
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

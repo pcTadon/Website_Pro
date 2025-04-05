@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="flags">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg" alt="Drapeau du Cameroun">
+            <!img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg" alt="Drapeau de la Belgique">
+        </div>
+        <img src="colin.jpg" alt="Photo de profil" class="profile-pic">
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="overflow:scroll; border:#000000 1px solid; ">
+        <main>
+            <section class="profile">
+                <h2>Bienvenue sur mon portfolio</h2>
+                <p>Découvrez mes projets et mon parcours professionnel.</p>
+                <button id="info-btn">Cliquez pour plus d'infos</button>
+                <p id="info-text" style="display: none;">Merci de visiter mon site ! N'hésitez pas à me contacter.</p>
+            </section>
+            <section class="visit-counter">
+                <h3>Nombre de visites :</h3>
+                <p id="visit-count">0</p>
+            </section>
+            <section class="visit-stats">
+                <h3>Statistiques des visites</h3>
+                <div class="chart-container">
+                    <canvas id="visitChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> - Mon Portfolio | Heure : <span id="current-time"></span></p>
+    </footer>
+</body>
+</html>
